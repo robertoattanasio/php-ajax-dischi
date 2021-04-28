@@ -10,8 +10,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous"></script>
 
     <!-- VUE JS -->
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
 
     <!-- GOOGLE FONTS NOTO SANS -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -28,12 +28,13 @@
         <?php 
         include __DIR__.'/partials/header.php';
         ?>
+        
 
         <main>
             <div class="main-wrapper">
                 <div class="album-container">
 
-                    <div class="album-item" v-for="album in albumList">
+                    <div class="album-item" v-for="album in albumListFrontEnd">
                         <div class="album-poster">
                             <img :src="album.poster" alt="">
                         </div>

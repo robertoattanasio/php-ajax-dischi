@@ -25,16 +25,18 @@
 <body class="">
     <div id="root">
 
-        <?php 
-        include __DIR__.'/partials/header.php';
-        ?>
-        
+        <header>
+            <img class="logo" src="img/spotify_logo.svg" alt="">
+            <select v-model="selectAuthor" @change="inputAuthor(selectAuthor)">
+            <option v-for="authorItem in albumAuthors" :value="authorItem">{{authorItem}}</option>
+            </select>
+        </header>
 
         <main>
             <div class="main-wrapper">
                 <div class="album-container">
 
-                    <div class="album-item" v-for="album in albumListFrontEnd">
+                    <div class="album-item" v-for="album in albums">
                         <div class="album-poster">
                             <img :src="album.poster" alt="">
                         </div>
@@ -46,12 +48,12 @@
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         </main>
     </div>
 
-    <script src="js/main.js"></script>
+    <script src="js/main_2.js"></script>
 </body>
 
 </html>

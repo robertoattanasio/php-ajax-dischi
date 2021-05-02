@@ -5,7 +5,7 @@ var app = new Vue({
         albumAuthors: ['All'],
         albumListBackEnd: [],
         albumListFrontEnd: [],
-        windowLocation: `${window.location.protocol}//${window.location.hostname}:${window.location.port}/php-ajax-dischi/server.php`
+        windowLocation: `${window.location.protocol}//${window.location.hostname}:${window.location.port}/php-ajax-dischi/server_1.php`
     },
 
     methods: {
